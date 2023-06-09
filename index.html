@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="assets/image/fav-icon.png">
+    <title>CTA GAMES | Selamat Datang</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d44183d997.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-image: url(assets/image/bg-pet.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+     <div class="versions">
+        <p>Version 1.00.0.2</p>
+    </div>
+
+    <div class="login-container">
+        <form class="login-form" id="login-form" action="guest.html" method="GET">
+            <img src="assets/image/playstation_logo.png" class="logo_playstation">
+
+            <input type="text" name="nama" id="nama" placeholder="Nama anda" required>
+            <input type="number" name="number" placeholder="Nomor telepon anda">
+            <button type="submit" id="submit"><i class="fa-solid fa-right-to-bracket"></i> Masuk</button>
+
+            <h3>As</h3>
+
+            <button value="admin" id="admin"><i class="fa-solid fa-user-gear"></i>&nbsp; Admin</button>
+            <button value="tamu" id="tamu"><i class="fa-solid fa-users"></i>&nbsp; Tamu</button>
+
+            <div class="stick">
+                <h3 class="rooms">Stasiun Playstation<br><label id="number">No Room Selected</label></h3>
+            </div>
+        </form>
+    </div>
+
+     <script src="assets/script/script.js"></script>
+</body>
+</html>

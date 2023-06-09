@@ -1,0 +1,119 @@
+<!-- <<<<<<<<<<<<<<< INI PENTING >>>>>>>>>>>>>>>>>>>>>>> -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var newNumber = urlParams.get('kamar');
+        
+        if (newNumber) {
+          document.getElementById("myHeading").innerHTML = newNumber;     
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Ini adalah meja nomor : <label id="myHeading">0</label></h1>
+    
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>    
+    /* CSS */
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+
+  
+  <form id="paymentForm">
+    <label for="cardNumber">Nomor Kartu</label>
+    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+    
+    <label for="expiryDate">Tanggal Kadaluarsa</label>
+    <input type="text" id="expiryDate" placeholder="MM/YYYY" required>
+    
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" placeholder="123" required>
+    
+    <button type="submit">Bayar</button>
+  </form>
+
+  <script>
+    var paymentForm = document.getElementById("paymentForm");
+
+    paymentForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      var cardNumber = document.getElementById("cardNumber").value;
+      var expiryDate = document.getElementById("expiryDate").value;
+      var cvv = document.getElementById("cvv").value;
+      
+      if (cardNumber && expiryDate && cvv) {
+     
+        
+        
+        window.location.href = "https://example.com/payment-gateway?cardNumber=" + cardNumber + "&expiryDate=" + expiryDate + "&cvv=" + cvv;
+      } else {
+        alert("Mohon lengkapi semua informasi pembayaran");
+      }
+    });
+  </script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    h1{
+      color: green;
+    }
+    @media only screen and (max-width: 1080px) {
+      h1{
+        background-color: green;
+        color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>hello</h1>
+</body>
+</html> -->
