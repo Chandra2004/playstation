@@ -13,5 +13,5 @@
 
 // EROR IF ROOM / TABLE (NULL)
     if(numRoom === "null") {
-        window.location.href = 'eror400.html';
+        window.location.href = '../../pages/error-pages/error400.html';
     }

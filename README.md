@@ -14,3 +14,4 @@ Version 1.00.0.3
   - Maintenance untuk page Admin
   - Pemberitahuan Meja | Kamar
   - Page eror ketika user tidak memilih kamar dengan melewati QR Code 
+  - Organize file & folder
