@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="assets/image/fav-icon.png">
+    <title>Form Pemesanan</title>
+</head>
+<body>
+  <h1>Form Pemesanan</h1>
+  
+  <form action="proses_pemesanan.php" method="POST">
+    <label for="tanggal">Tanggal:</label>
+    <input type="date" id="tanggal" name="tanggal" required><br><br>
+    
+    <label>Pilihan Jam:</label><br>
+
+    <div class="checkbox">
+        <input type="checkbox" id="jam30" name="jam[]" value="30" onclick="limitJamSelection()">
+        <label for="jam30">30 Menit</label><br>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" id="jam45" name="jam[]" value="45" onclick="limitJamSelection()">
+        <label for="jam45">45 Menit</label><br>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" id="jam1" name="jam[]" value="1" onclick="limitJamSelection()">
+        <label for="jam1">1 Jam</label><br>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" id="jam2" name="jam[]" value="2" onclick="limitJamSelection()">
+        <label for="jam2">2 jam</label><br>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" id="jam3" name="jam[]" value="3" onclick="limitJamSelection()">
+        <label for="jam3">3 jam</label><br>
+    </div>
+    <!-- Tambahkan pilihan jam yang lain disini -->
+    
+    <br>
+    
+    <label>Pilihan Metode Pembayaran:</label><br>
+    <input type="radio" id="bni" name="metode_pembayaran" value="BNI" required>
+    <label for="bni">BNI</label><br>
+    
+    <input type="radio" id="bri" name="metode_pembayaran" value="BRI">
+    <label for="bri">BRI</label><br>
+    
+    <!-- Tambahkan pilihan metode pembayaran yang lain disini -->
+    
+    <br>
+    
+    <input type="submit" value="Selanjutnya">
+  </form>
+
+  <script>
+    function limitJamSelection() {
+      var checkboxes = document.getElementsByName('jam[]');
+      var selectedCount = 0;
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          selectedCount++;
+        }
+      }
+      if (selectedCount >= 2) {
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (!checkboxes[i].checked) {
+            checkboxes[i].disabled = true;
+          }
+        }
+      } else {
+        for (var i = 0; i < checkboxes.length; i++) {
+          checkboxes[i].disabled = false;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

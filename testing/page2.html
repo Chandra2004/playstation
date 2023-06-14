@@ -1,0 +1,275 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Berikutnya</title>
+</head>
+<body>
+    <h1>Halo, </h1>
+    <h2>Terima kasih telah mengisi form!</h2>
+    
+    <script>
+        // Ambil nilai parameter 'nama' dari URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const nama = urlParams.get('nama');
+        
+        // Tampilkan nama di dalam elemen h1
+        const h1Element = document.querySelector('h1');
+        h1Element.textContent += nama;
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+  <script>
+    window.onload = function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var value = urlParams.get('value');
+      document.getElementById('valueDisplay').textContent = value;
+    };
+  </script>
+</head>
+<body>
+  <h1>Nilai dari URL:</h1>
+  <p id="valueDisplay"></p>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+  <script>
+    window.onload = function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var value = urlParams.get('value');
+      document.getElementById('valueDisplay').textContent = value;
+    };
+  </script>
+</head>
+<body>
+  <h1>Nilai dari URL:</h1>
+  <p id="valueDisplay"></p>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+  <script>
+    // Mendapatkan nilai value dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const nilai = urlParams.get('nilai');
+
+    // Menggunakan nilai value
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('nilaiDisplay').textContent = nilai;
+    });
+  </script>
+</head>
+<body>
+  <h1>Nilai Value:</h1>
+  <p id="nilaiDisplay"></p>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Guest Page</title>
+</head>
+<body>
+  <h1>Welcome, <span id="guestName"></span>!</h1>
+  <p>Your room number is: <span id="roomNumber"></span></p>
+
+  <script>
+    // Mengambil nilai nama dari local storage
+    var name = localStorage.getItem('name');
+
+    // Mengambil nilai nomor kamar dari local storage
+    var numroom = localStorage.getItem('numroom');
+
+    // Menampilkan nilai nama
+    document.getElementById('guestName').textContent = name;
+
+    // Menampilkan nilai nomor kamar
+    document.getElementById('roomNumber').textContent = numroom;
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guest Page</title>
+</head>
+<body>
+  <h1 id="roomNumber"></h1>
+
+  <script>
+    // Mendapatkan nilai kamar dari URL di halaman kedua
+    const print = localStorage.getItem('punyakku');
+    console.log("INI SUDAH DIKELUARKAN = " + print);
+
+    document.getElementById('roomNumber').textContent = print;
+
+  
+
+    // Memeriksa apakah URL bernilai null
+    if (print === "null") {
+      // Menampilkan pesan peringatan jika URL bernilai null
+      alert("URL tidak tersedia!");
+    }
+
+    // Menampilkan nilai kamar
+    // document.getElementById('roomNumber').textContent = "Ini kamar nomor " + kamar;
+  </script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 id="numRoom"></h1>
+
+  <script>
+    // // Mengambil nilai dari localStorage
+    // const myValue = localStorage.getItem('myValue');
+
+    // // Menggunakan nilai tersebut
+    // console.log(myValue);
+    const print = localStorage.getItem('punyakku');
+
+    console.log("INI SUDAH DIKELUARKAN = " + print);
+
+    const ikan = document.getElementById('numRoom');
+
+    ikan.textContent += print;
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

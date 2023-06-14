@@ -2,43 +2,44 @@
 <html>
 <head>
     <link rel="icon" href="assets/image/fav-icon.png">
-    <title>CTA GAMES | Selamat Datang</title>
+
+    <title>Game Station No #1 | CTA GAMES</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
     <script src="https://kit.fontawesome.com/d44183d997.js" crossorigin="anonymous"></script>
-
-    <style>
-
-        
-    </style>
-
 </head>
 <body>
     <div id="background" class="background"></div>
 
-     <div class="versions">
-        <p>Version 1.00.0.2</p>
+    <div class="versions">
+        <p id="versions-text"></p>
     </div>
 
-    <div class="login-container">
+    <div class="box-container">
         <form class="login-form" id="login-form" action="guest.html" method="GET">
             <img src="assets/image/playstation_logo.png" class="logo_playstation">
 
             <input type="text" name="nama" id="nama" placeholder="Nama anda" required>
             <input type="number" name="number" placeholder="Nomor telepon anda">
+            
             <button type="submit" id="submit"><i class="fa-solid fa-right-to-bracket"></i> Masuk</button>
 
             <h3>As</h3>
 
-            <button value="admin" id="admin"><i class="fa-solid fa-user-gear"></i>&nbsp; Admin</button>
+            <button value="admin" id="admin" onclick="location.href='admin.html'"><i class="fa-solid fa-user-gear"></i>&nbsp; Admin</button>
             <button value="tamu" id="tamu"><i class="fa-solid fa-users"></i>&nbsp; Tamu</button>
 
-            <div class="stick">
-                <h3 class="rooms">Stasiun Playstation<br><label id="number">No Room Selected</label></h3>
+            <div class="announce">
+                <p>* Admin tidak perlu memasukkan nama & no.telp</p>
+            </div>
+            
+            <div class="container-rooms">
+                <h3 class="rooms">Meja | Kamar<br><label id="number">No Room Choosen<br>Please Scan The QR Code</label></h3>
             </div>
         </form>
     </div>
 
-     <script src="assets/script/script.js"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>

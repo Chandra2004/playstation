@@ -117,3 +117,363 @@
   <h1>hello</h1>
 </body>
 </html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Form Login</title>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "password") {
+                // Jika username dan password benar, arahkan ke website YouTube
+                window.location.href = "https://www.youtube.com";
+            } else {
+                // Jika username atau password salah, tampilkan pesan kesalahan
+                alert("Username atau password salah!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Login</h1>
+    <label for="username">Username:</label>
+    <input type="text" id="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password"><br><br>
+    <button onclick="login()">Login</button>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Contoh</title>
+  
+</head>
+<body>
+  <input type="text" id="inputText" placeholder="Masukkan teks">
+  <button onclick="updateTitle()">Perbarui Judul</button>
+
+  <script>
+    function updateTitle() {
+      var inputText = document.getElementById("inputText").value;
+      document.title = inputText;
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+</head>
+<body>
+  <a href="halaman_berikutnya.html?value=Nilai+Anda">Ke Page 2</a>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+</head>
+<body>
+  <input type="text" id="valueInput" placeholder="Masukkan Nilai">
+  <button onclick="redirectToPage2()">Ke Page 2</button>
+
+  <script>
+    function redirectToPage2() {
+      var value = document.getElementById('valueInput').value;
+      window.location.href = "page2.html?value=" + encodeURIComponent(value);
+    }
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+  <script>
+    function goToPage2() {
+      var nilai = document.getElementById('nilai').value; // Mendapatkan nilai input pengguna
+      var url = 'page2.html?nilai=' + encodeURIComponent(nilai); // Membuat URL dengan nilai value
+      window.location.href = url; // Mengarahkan pengguna ke page 2
+    }
+  </script>
+</head>
+<body>
+  <label for="nilai">Masukkan Nilai:</label>
+  <input type="text" id="nilai">
+  <button onclick="goToPage2()">Go to Page 2</button>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Input</title>
+</head>
+<body>
+  <form id="inputForm">
+    <label for="nameInput">Nama:</label>
+    <input type="text" id="nameInput" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    // Mendapatkan nilai nomor kamar dari URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var numroom = urlParams.get('numroom');
+
+    // Menyimpan nilai nomor kamar dalam local storage
+    localStorage.setItem('numroom', numroom);
+
+    // Mengambil elemen form dan menangani submit event
+    var form = document.getElementById('inputForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Mendapatkan nilai nama dari input
+      var name = document.getElementById('nameInput').value;
+
+      // Menyimpan nilai nama dalam local storage
+      localStorage.setItem('name', name);
+
+      // Mengarahkan ke halaman guest.html
+      window.location.href = 'page2.html';
+    });
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Index Page</title>
+</head>
+<body>
+  <a href="">aaaa</a>
+  <script>
+    // Mendapatkan nilai kamar dari URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var kamar = urlParams.get('kamar');
+
+    // Mengarahkan ke halaman kedua (guest.html) dengan menyertakan nilai kamar sebagai parameter query string
+    window.location.href = 'page2.html?kamar=' + kamar;
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Index Page</title>
+</head>
+<body>
+  <h1>Informasi Kamar</h1>
+  <p id="roomInfo"></p>
+  
+  <script>
+    // Mendapatkan nilai kamar dari URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var kamar = urlParams.get('kamar');
+
+    // Menampilkan informasi kamar
+    var roomInfoElement = document.getElementById('roomInfo');
+    roomInfoElement.textContent = "Kamar nomor " + kamar + " tersedia.";
+
+    // Mengarahkan ke halaman kedua (guest.html) dengan menyertakan nilai kamar sebagai parameter query string
+    window.location.href = 'page2.html?kamar=' + kamar;
+  </script>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local Storage Example</title>
+</head>
+<body>
+  <h1>Data dari Local Storage</h1>
+  <p id="data"></p>
+
+  <script>
+    // Mendapatkan nilai dari local storage
+    var data = localStorage.getItem('key');
+
+    // Menampilkan nilai di halaman web
+    var dataElement = document.getElementById('data');
+    dataElement.textContent = "Nilai yang disimpan: " + data;
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="page2.html" method="post">
+    <h1 id="number"></h1>
+    
+    <label for="user"></label>
+    <input type="text" id="user" required>
+
+    <button type="submit" value="submit">SUBMIT</button>
+  </form>
+  
+
+  <script>
+    window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const newNumber = urlParams.get('numroom');
+    
+    console.log("Ini Kamarnya = " + newNumber);
+
+    if (newNumber) {
+      document.getElementById("number").innerHTML = newNumber;     
+    }
+
+    // Menyimpan URL LocalStorage
+    localStorage.setItem('punyakku', newNumber);
+
+    // mengeluarkan URL LocalStorage
+    const print = localStorage.getItem('punyakku');
+    console.log("INI SUDAH DIKELUARKAN = " + print);
+  };
+    // // Mendapatkan nilai dari URL
+    // const urlParams = new URLSearchParams(window.location.search);
+    // const myValue = urlParams.get('nilai');
+
+    // // Menyimpan nilai di localStorage
+    // localStorage.setItem('myValue', myValue);
+  </script>
+</body>
+</html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Tekan tombol refresh</h1>
+
+  <script>
+    // window.addEventListener('beforeunload', function(event) {
+    //   // Pesan yang akan ditampilkan pada alert
+    //   var confirmationMessage = 'Apakah Anda yakin ingin meninggalkan halaman ini?';
+
+    //   // Menampilkan pesan konfirmasi pada alert
+    //   event.returnValue = confirmationMessage;
+    //   return confirmationMessage;
+    // });
+
+    // window.addEventListener('unload', function(event) {
+    //   // Menampilkan alert saat pengguna meninggalkan halaman atau melakukan refresh
+    //   alert('Halaman akan dimuat ulang atau ditinggalkan.');
+    // });
+    window.addEventListener('beforeunload', function(event) {
+  // Pesan yang akan ditampilkan pada alert
+  var confirmationMessage = 'Apakah Anda yakin ingin meninggalkan halaman ini?';
+
+  // Menampilkan pesan konfirmasi pada alert
+  event.returnValue = confirmationMessage;
+  return confirmationMessage;
+});
+
+window.addEventListener('unload', function(event) {
+  // Menampilkan alert saat pengguna meninggalkan halaman atau melakukan refresh
+  alert('Halaman akan dimuat ulang atau ditinggalkan.');
+});
+
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

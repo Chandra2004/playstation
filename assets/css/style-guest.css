@@ -1,0 +1,11 @@
+.container-rooms {
+    margin-bottom: 12px;
+}
+
+.container-rooms h3 {
+    font-size: 2rem;
+}
+
+.container-rooms #numGuest {
+    font-weight: bold;
+} 

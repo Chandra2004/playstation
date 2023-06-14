@@ -37,48 +37,28 @@
         color: white;
     }
 
-    .welcome-container,
-    .login-container {
+    .box-container {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
-     .selamat-datang{
-        color: rgb(255, 255, 255);
-        text-align: center;
-        position: absolute;
-        top: 26%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .welcome{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-
-    .login-form,
-    .welcome-form {
+    
+    .admin-form,
+    .welcome-form,
+    .login-form {
         background-color: rgba(37, 37, 37, 0.35);
         width: 95%;
-        height: 952px;
+        padding-bottom: 50px;
         padding-top: 65px;
         border-radius: 24px;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(50px);
     }
 
-    .welcome-form{
-        height: 198px;
+    .admin-form{
+        height: 600px;
     }
 
     .logo_playstation{
@@ -87,6 +67,8 @@
         width: 50%;
     }
 
+    .admin-form input[type="text"],
+    .admin-form input[type="password"],
     .login-form input[type="text"],
     .login-form input[type="number"],
     .login-form input[type="password"] {
@@ -103,9 +85,21 @@
         border-radius: 12px;
     }
 
-    .login-form button[type="submit"],
-    .welcome-form button[value="billing"],
-    .welcome-form button[value="makanan"] {
+    .admin-form #subAdmin {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        width: 90%;
+        height: 100px;
+        padding: 10px;
+        background-color: #F15E51;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .login-form button[type="submit"] {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
         font-weight: 500;
@@ -117,12 +111,6 @@
         border: none;
         border-radius: 12px;
         cursor: pointer;
-    }
-    
-    .welcome-form button[value="billing"],
-    .welcome-form button[value="makanan"] {
-        margin-bottom: 15px;
-        background-color: #F15E51;
     }
 
     .login-form h3{
@@ -155,7 +143,19 @@
         margin-bottom: 16px;
     }
 
-    .stick {
+    .announce {
+        background-color: rgba(255, 255, 255, 0.575);
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 12px;
+        padding: 12px;
+        text-align: left;
+        font-size: 1.4rem;
+        color: red;
+        margin-bottom: 15px;
+    }
+
+    .container-rooms {
         background-color: rgba(0, 0, 0, 0.575);
         width: 90%;
         margin: 0 auto;
@@ -163,49 +163,47 @@
         padding: 12px;
     }
 
-    .stick .rooms {
+    .container-rooms .rooms {
         color: white;
         font-weight: 300;
         text-align: center;
     }
 
-    .stick #number{
+    .container-rooms #number{
         font-weight: 700;
     }
 
+    .welcome-form {
+        height: 795px;
+    }
+
+    .welcome-form .selamat-datang {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.575);
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 12px;
+    }
+
+    .welcome-form button[value="billing"],
+    .welcome-form button[value="makanan"] {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        width: 90%;
+        height: 100px;
+        padding: 10px;
+        background-color: #F3D95A;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-bottom: 12px;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* @media only screen and (min-width: 600px) and (max-width: 959px) {
-        body {
-            overflow: hidden;
-        }
-
-        .stick {
-            width: 100%;
-            background-color: rgba(255, 0, 0, 0.5);
-            position: sticky;
-            top: 0;
-            padding: 5px;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(50px);
-        }
-
-    } */
-
-
-    /*  */
+    /* @media only screen and (min-width: 600px) and (max-width: 959px) { */
